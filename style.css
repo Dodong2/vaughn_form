@@ -66,6 +66,10 @@ form .child-div-2 select {
     color: #EF9C66;
 }
 
+.child-div-2 button a {
+    text-decoration: none;
+    color: white;
+}
 
 .child-div-2 button {
     display: flex;
@@ -85,14 +89,63 @@ form .child-div-2 select {
     border: none;
     outline: none;
     border-radius: 10px;
+    position: relative;
 }
+
+.child-div-2 button a:hover {
+    color: #EF9C66;
+}
+
 .child-div-2 button:hover {
     transition: 0.3s ease;
     background-color: #efefef;
     color: #EF9C66;
 }
+
 .child-div-2 button:active {
     transform: scale(0.100);
+}
+
+.return button {
+    background-color: #EF9C66;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.return button a {
+    text-decoration: none;
+    color: #efefef;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Header styling */
+th,
+td {
+    padding: 5px 5px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Row hover effect */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Table borders */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 
@@ -107,6 +160,15 @@ form .child-div-2 select {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 1px;
     }
 }

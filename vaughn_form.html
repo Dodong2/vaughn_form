@@ -10,32 +10,33 @@
     <div class="parent-div">
       <div class="title">Student Fill-Up Form</div>
       <div class="child-div-1">
-        <form>
+        <form action="submit_form.php" method="post">
           <div class="child-div-2">
             <!-- Full Name -->
             <input
               type="text"
-              name="fullname"
+              name="student_name"
               placeholder="full name"
               required
             />
             <!-- Email -->
-            <input type="email" name="email" placeholder="email" required />
+            <input type="email" name="student_email" placeholder="email" required />
           </div>
           <div class="child-div-2">
             <!-- gender -->
-            <select name="gender" required>
+            <select name="student_gender" required>
               <option value="" disabled selected>- select gender -</option>
               <option value="Male">Male</option>
-              <option value="Male">Female</option>
+              <option value="Female">Female</option>
             </select>
             <!-- Age -->
-            <input type="number" name="age" placeholder="age" required />
+            <input type="number" name="student_age" placeholder="age" required />
             <!-- Course -->
-            <input type="" text name="course" placeholder="course" required />
+            <input type="text" name="student_course" placeholder="course" required />
           </div>
           <div class="child-div-2">
-            <button type="submit">SUBMIT</button>
+            <button type="submit" name="create" value="Submit">SUBMIT</button>
+            <button class="results"><a href="./view_students.php">results!</a></button>
           </div>
         </form>
       </div>
